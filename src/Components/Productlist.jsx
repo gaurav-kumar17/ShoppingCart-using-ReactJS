@@ -1,7 +1,7 @@
 import "../App.css";
 import React from "react";
-const Productlist = ({ product }) => {
-  console.log("hi",product[0].name);
+const Productlist = ({ product,addToCart }) => {
+ 
   return (
     <div className="flex">
       {
@@ -14,6 +14,7 @@ const Productlist = ({ product }) => {
                     <p>{productItems.name} | {productItems.category}</p>
                     <p>{productItems.seller}</p>
                     <p>Rs. {productItems.price} /-</p>
+                    <button onClick={()=> addToCart(productItems)}>Add to Cart</button>
                 </div>
             </div>
             )

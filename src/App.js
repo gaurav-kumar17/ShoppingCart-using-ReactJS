@@ -51,12 +51,18 @@ function App() {
     },
   ])
 
+  const[cart,setCart]=useState([])
+
+  const addToCart=(data)=>{
+      console.log(data)
+  }
 
   return (
     <>
       <Header />
       <Productlist
         product={product}
+        addToCart={addToCart}
       />
     </>
   );
