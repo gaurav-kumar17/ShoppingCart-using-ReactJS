@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.flex{
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.shopping-card{
+  font-weight: 600;
+  justify-content: space-between;
+  background-color: rgba(0, 123, 255, 0.874);
+  padding: 10px 30px;
+}
